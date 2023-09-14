@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
-import { ProductListComponent } from './product/product-listings/product-listings.component';
-import { PuroductDetailComponent } from './product/puroduct-detail/puroduct-detail.component';
-import { ProductComponent } from './product/product.component';
+import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +13,8 @@ import { ProductComponent } from './product/product.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
